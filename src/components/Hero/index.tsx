@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const Hero = () => {
   return (
-    <div className="flex flex-col-reverse md:flex-row w-full px-10 lg:container md:mt-20 gap-20">
+    <div className="flex flex-col-reverse md:flex-row w-full px-5 md:px-10 lg:px-[10rem] lg:container md:mt-20 gap-10 lg:gap-x-20">
       <div className="md:w-1/2 lg:mt-14">
         <h1 className="bg-gradient-to-r from-[#b53c2a] via-[#000] to-[#b53c2a] inline-block text-transparent bg-clip-text font-bold md:text-5xl text-3xl md:leading-[120%]">
           Notarisez en ligne. <br /> Partout. <br /> À tout moment.
