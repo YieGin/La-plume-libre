@@ -7,20 +7,21 @@ import {
 } from "../.././ui/sheet";
 import { Logo } from "../../../../public/assets";
 import { BiMenuAltRight } from "react-icons/bi";
-import { usePathname } from "next/navigation";
 import MobileNavLinks from "./MobileNavLinks";
 
-const MobileNav = () => {
-  const pathname = usePathname();
-  const isActive = (path: string) => pathname === path;
+interface MobileNavProps {
+  isScrolled: boolean;
+}
+
+const MobileNav = ({ isScrolled }: MobileNavProps) => {
   return (
     <Sheet>
       <SheetTrigger aria-label="Open navigation menu">
         <BiMenuAltRight
           className={`${
-            isActive("/projects")
-              ? "text-white text-3xl"
-              : "text-black dark:text-white text-3xl"
+            isScrolled
+              ? "text-black dark:text-white text-3xl"
+              : "text-white text-3xl"
           }`}
         />
       </SheetTrigger>

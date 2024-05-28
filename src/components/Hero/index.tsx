@@ -1,26 +1,14 @@
 import React from "react";
-import { Button } from "../ui/button";
 import Image from "next/image";
 
 const Hero = () => {
   return (
-    <div className="flex flex-col-reverse md:flex-row w-full px-5 md:px-10 lg:px-[10rem] lg:container md:mt-20 gap-10 lg:gap-x-20">
-      <div className="md:w-1/2 lg:mt-14">
-        <h1 className="bg-gradient-to-r from-[#b53c2a] via-[#000] to-[#b53c2a] inline-block text-transparent bg-clip-text font-bold md:text-5xl text-3xl md:leading-[120%]">
-          Notarisez en ligne. <br className="lg:block hidden" /> Partout. <br className="lg:block hidden" /> À tout moment.
-        </h1>
-        <p className="mt-5">
-          Avec la notarisation en ligne, vous n'avez pas besoin de traverser la
-          ville pour trouver un notaire. Téléchargez votre document, prouve
-          votre identité et rencontrez instantanément un notaire en ligne.
-        </p>
-        <Button className="mt-5 py-7">Notarisez un document maintenant</Button>
-      </div>
+    <div className="flex flex-col relative md:flex-row w-full px-5 gap-0 lg:gap-x-20 h-screen bg-black">
       <Image
-        className="md:w-1/2 h-[500px] object-cover rounded-md"
+        className="absolute left-0 right-0 top-0 w-full h-screen object-cover"
         src="/assets/images/hero.png"
-        width="700"
-        height="700"
+        width={3000}
+        height={2000}
         alt="Image Héro"
       />
     </div>

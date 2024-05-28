@@ -4,7 +4,7 @@ import React from "react";
 
 const Companies = () => {
   return (
-    <div className="bg-[#f9f9f7] w-full h-40 mt-10 flex items-center justify-center">
+    <div className="bg-[#f9f9f7] dark:bg-[#070a14] w-full h-40 flex items-center justify-center">
       <div className="flex items-center justify-between lg:container px-5 md:px-10 lg:px-[10rem] gap-5">
         {Logos_companies.map((item, index) => (
           <div key={index}>
