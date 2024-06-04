@@ -114,3 +114,30 @@ export const TrustfulData: Types[] = [
     `
   },
 ]
+
+export const TestimonialList = [
+  {
+    image: "/assets/images/client.png",
+    title: "SOPHIE, ENTREPRENEUSE",
+    text: `
+      Je ne peux pas assez recommander de travailler avec John. Son encadrement et sa méthode d'enseignement ont transformé mon flux
+      de travail et amélioré ma productivité. Je travaillerai de nouveau avec lui, merci beaucoup John.
+    `
+  },
+  {
+    image: "/assets/images/client.png",
+    title: "MARC, CONSULTANT",
+    text: `
+      Travailler avec John a été une expérience incroyable. Son expertise et sa manière de guider m'ont permis d'optimiser mes
+      processus professionnels. Je suis extrêmement reconnaissant pour son aide précieuse.
+    `
+  },
+  {
+    image: "/assets/images/client.png",
+    title: "ISABELLE, PROPRIÉTAIRE D'ENTREPRISE",
+    text: `
+      Grâce à John, j'ai pu redéfinir ma stratégie commerciale. Ses conseils et son soutien ont été inestimables pour le développement
+      de mon entreprise. Je recommande fortement ses services.
+    `
+  },
+];

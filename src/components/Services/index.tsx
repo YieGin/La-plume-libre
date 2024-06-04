@@ -55,7 +55,7 @@ const Services = () => {
               </h1>
               <p
                 className={`text-center text-[0.9rem] text-muted-foreground transition-all duration-200 ${
-                  index === 0 || index === 2 || index === 4 ? "text-[#dadada] group-hover:text-muted-foreground" : "group-hover:text-[#dadada] dark:group-hover:text-muted-foreground"
+                  index === 0 || index === 2 || index === 4 ? "text-[#ababab] group-hover:text-muted-foreground" : "group-hover:text-[#dadada] dark:group-hover:text-muted-foreground"
                 }`}
               >
                 {item.description}
