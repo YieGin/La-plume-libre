@@ -51,8 +51,8 @@ const FormSection = () => {
       />
       <p className="font-light text-[0.9rem]">
         Actuellement à la recherche de nouvelles opportunités professionnelles,
-        je suis prêt à m'engager dans des projets où je peux contribuer et
-        évoluer. N'hésitez pas à me contacter, je vous répondrai dès que
+        je suis prêt à m&apos;engager dans des projets où je peux contribuer et
+        évoluer. N&apos;hésitez pas à me contacter, je vous répondrai dès que
         possible.
       </p>
       <Form {...form}>
