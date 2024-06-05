@@ -20,13 +20,15 @@ const Services = () => {
   return (
     <div className="mt-10 py-10">
       <div className="lg:container px-5 md:px-10 lg:px-[10rem]">
+        <h2
+          className="bg-gradient-to-r from-[#b53c2a] via-[#000]
+          dark:via-[#b53c2a] to-[#b53c2a] dark:to-[#fff] inline-block
+          text-transparent bg-clip-text font-bold text-3xl"
+        >
+          What we do
+        </h2>
         <AnimatedCharacters
-          className="md:text-4xl text-3xl font-semibold uppercase text-center"
-          type="heading1"
-          text="What we do"
-        />
-        <AnimatedCharacters
-          className="uppercase font-bold md:text-5xl text-3xl md:leading-[120%] mt-3 text-center"
+          className="uppercase font-bold md:text-5xl text-3xl md:leading-[120%] mt-3 "
           type="heading1"
           text="Our services"
         />
@@ -48,14 +50,18 @@ const Services = () => {
               <FaFeatherAlt size={40} color="#b53c2a" />
               <h1
                 className={`font-bold text-[1rem] text-center transition-all duration-200 ${
-                  index === 0 || index === 2 || index === 4 ? "group-hover:text-black dark:text-white" : "group-hover:text-white dark:text-white dark:group-hover:text-black"
-                }`} 
+                  index === 0 || index === 2 || index === 4
+                    ? "group-hover:text-black dark:text-white"
+                    : "group-hover:text-white dark:text-white dark:group-hover:text-black"
+                }`}
               >
                 {item.title}
               </h1>
               <p
                 className={`text-center text-[0.9rem] text-muted-foreground transition-all duration-200 ${
-                  index === 0 || index === 2 || index === 4 ? "text-[#ababab] group-hover:text-muted-foreground" : "group-hover:text-[#dadada] dark:group-hover:text-muted-foreground"
+                  index === 0 || index === 2 || index === 4
+                    ? "text-[#ababab] group-hover:text-muted-foreground"
+                    : "group-hover:text-[#dadada] dark:group-hover:text-muted-foreground"
                 }`}
               >
                 {item.description}

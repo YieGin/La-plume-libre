@@ -135,7 +135,12 @@ const FormSection = () => {
           {isLoading ? (
             <LoadingButton />
           ) : (
-            <Button className="bg-gradient-to-r from-[#b53c2a] via-[#b53c2a] dark:via-[#b53c2a] to-[#000] dark:to-[#fff]" type="submit">Soumettre</Button>
+            <Button
+              className="bg-gradient-to-r from-[#b53c2a] via-[#b53c2a] dark:via-[#b53c2a] to-[#000] dark:to-[#000] text-white"
+              type="submit"
+            >
+              Soumettre
+            </Button>
           )}
         </form>
       </Form>

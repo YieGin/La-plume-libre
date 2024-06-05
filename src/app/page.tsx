@@ -15,7 +15,7 @@ const Main = () => {
       <Companies />
       <Services />
       <Trustful />
-      <div className="bg-[#F5F5F5] pt-20 mt-20">
+      <div className="bg-[#F5F5F5] dark:bg-[#080a14] pt-20 mt-20">
         <Testimonial />
         <Faq />
         <Contact />
