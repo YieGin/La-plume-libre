@@ -5,15 +5,16 @@ import { ThemeProvider } from "next-themes";
 import ReactQueryProvider from "@/query/reactQuerySetup";
 import { Toaster } from "sonner";
 import { createMetadata } from "@/lib/createMetadata";
+import Footer from "@/components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = createMetadata({
   title: {
-    absolute: "Portfolio",
-    template: "Portfolio | %s",
+    absolute: "La Plume Libre",
+    template: "La Plume Libre | %s",
   },
-  description: "This is my professional portfolio site.",
+  description: "This is my professional La Plume Libre site.",
 });
 
 export default function RootLayout({
@@ -36,6 +37,7 @@ export default function RootLayout({
               {children}
               <Toaster visibleToasts={1} position="bottom-right" richColors />
             </div>
+            <Footer />
           </ThemeProvider>
         </ReactQueryProvider>
       </body>

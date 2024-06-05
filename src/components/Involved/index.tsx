@@ -8,14 +8,14 @@ const Involved = () => {
     <div className="flex flex-wrap gap-5 w-full justify-between px-5 md:px-[5rem] mt-20 pb-20 dark:bg-[#080a14]">
       <div className="flex flex-col gap-y-5">
         <p className="font-bold md:text-[18px] xs:text-[14px] text-[#11142D] dark:text-[#eee]">
-          Empowering
+          Autonomisation
         </p>
         <h1 className="bg-gradient-to-r from-[#b53c2a] via-[#000] dark:via-[#b53c2a] to-[#b53c2a] dark:to-[#fff] inline-block text-transparent bg-clip-text font-bold md:text-4xl text-3xl md:leading-[120%]">
-          Get Involved
+          Être impliqué
         </h1>
         <p className="font-semibold md:text-[18px] xs:text-[14px] text-[#11142D] dark:text-[#eee]">
-          We would love to hear from you. Please reach out to us with any
-          questions or inquiries.
+          Nous aimerions avoir de vos nouvelles. Veuillez nous contacter pour
+          tout des questions ou des demandes de renseignements.
         </p>
       </div>
       <div className="flex flex-col gap-y-3 mt-10 font-sans">

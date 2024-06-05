@@ -5,10 +5,6 @@ export const NavList: NavbarType[] = [
     name: "Contact",
     href: "/contact",
   },
-  {
-    name: "About",
-    href: "/about",
-  },
 ];
 
 export const Logos_companies: LogosType[] = [
@@ -139,5 +135,23 @@ export const TestimonialList = [
       Grâce à John, j'ai pu redéfinir ma stratégie commerciale. Ses conseils et son soutien ont été inestimables pour le développement
       de mon entreprise. Je recommande fortement ses services.
     `
+  },
+];
+
+export const linkData = [
+  {
+    id: "primary",
+    links: [
+      { href: "/", text: "Home" },
+      { href: "/contact", text: "Contact" },
+    ],
+  },
+  {
+    id: "social",
+    links: [
+      { href: "", text: "Instagram" },
+      { href: "", text: "Facebook" },
+      { href: "", text: "Twitter" },
+    ],
   },
 ];

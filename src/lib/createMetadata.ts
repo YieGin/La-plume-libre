@@ -1,6 +1,6 @@
 import type { Metadata } from "next/types";
 
-export const baseUrl = "https://portfolio-new-self-sigma.vercel.app";
+export const baseUrl = "https://la-plume-libre.vercel.app";
 
 export function createMetadata(override: Metadata): Metadata {
   return {
@@ -18,7 +18,7 @@ export function createMetadata(override: Metadata): Metadata {
           url: "/banner.png",
         },
       ],
-      siteName: "Portfolio",
+      siteName: "La Plume Libre",
       ...override.openGraph,
     },
     twitter: {

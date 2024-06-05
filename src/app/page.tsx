@@ -10,7 +10,7 @@ import React from "react";
 
 const Main = () => {
   return (
-    <div className="pb-52">
+    <div>
       <Hero />
       <Companies />
       <Services />

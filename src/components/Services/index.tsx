@@ -66,15 +66,6 @@ const Services = () => {
               >
                 {item.description}
               </p>
-              <div className="flex gap-1 items-center mt-auto text-[#b53c2a]">
-                <Link
-                  href="/"
-                  className="uppercase font-bold cursor-pointer underline"
-                >
-                  Learn more
-                </Link>
-                <IoIosArrowRoundForward size={20} />
-              </div>
             </motion.div>
           ))}
         </div>
