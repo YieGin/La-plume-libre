@@ -1,13 +1,8 @@
-import React, { useEffect, useRef } from "react";
-import { useScroll, motion } from "framer-motion";
+import React from "react";
+import { motion } from "framer-motion";
 import Image from "next/image";
 
 const ContactImage = () => {
-  const container = useRef<HTMLDivElement>(null);
-  const paths = useRef<(SVGTextPathElement | null)[]>([]);
-  const { scrollYProgress } = useScroll({
-    target: container,
-  });
 
   const itemVariants = {
     offscreen: { opacity: 0, x: 100 },
@@ -18,15 +13,6 @@ const ContactImage = () => {
     }),
   };
 
-  useEffect(() => {
-    scrollYProgress.on("change", (e) => {
-      paths.current.forEach((path, i) => {
-        if (path) {
-          path.setAttribute("startOffset", `${-60 + i * 60 + e * 60}%`);
-        }
-      });
-    });
-  }, [scrollYProgress]);
 
   return (
     <motion.div
@@ -37,7 +23,7 @@ const ContactImage = () => {
       className="w-1/2 relative lg:block hidden"
     >
       <Image
-        className="w-full h-full object-cover rounded-sm absolute brightness-75"
+        className="w-full h-full object-cover rounded-sm absolute"
         src={"/assets/images/contactImg.png"}
         width={2000}
         height={2000}

@@ -1,52 +1,22 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
-import { ModeToggle } from "@/utils/ModeToggle";
 import { Logo } from "../../../public/assets";
+import { ModeToggle } from "@/utils/ModeToggle";
 
 const Header = () => {
-  const [isScrolled, setIsScrolled] = useState<boolean>(false);
-  const pathname = usePathname()
-  const isHomePage = pathname === "/"; 
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const currentScrollPos = window.pageYOffset;
-      setIsScrolled(currentScrollPos > window.innerHeight);
-    };
-
-    if (isHomePage) {
-      window.addEventListener("scroll", handleScroll);
-      return () => {
-        window.removeEventListener("scroll", handleScroll);
-      };
-    }
-  }, [isHomePage]);
-
   return (
-    <nav
-      className={`fixed top-0 z-10 w-full duration-300 ${
-        isHomePage
-          ? isScrolled
-            ? "bg-white dark:bg-transparent dark:backdrop-blur-[100px]"
-            : "bg-transparent text-white"
-          : "bg-white dark:bg-transparent dark:backdrop-blur-[100px]"
-      }`}
-    >
-      <div
-        className={`sticky top-3 right-0 z-40 flex h-[60px] items-center justify-between px-8 shadow-sm saturate-100`}
-      >
-        <div className="flex items-center gap-2 text-black dark:text-white">
-          <ModeToggle />
-        </div>
-        <Link href="/">
-          <Logo aria-label="Home" className="dark:text-white w-[60px] h-[60px]" />
-        </Link>
-        <div className="flex items-center gap-5">
-          <Link href={"/contact"}>Contact</Link>
-        </div>
+    <nav className="bg-white dark:bg-transparent backdrop-blur-[1000px] sticky top-3 right-0 z-40 mx-auto flex h-[60px] max-w-5xl items-center justify-between rounded-2xl border-b-2 px-8 shadow-sm saturate-100">
+      <div className="  flex items-center gap-5">
+        <ModeToggle />
       </div>
+      <Link className="flex items-center" href="/">
+        <Logo
+          aria-label="Home"
+          className="text-[#000] dark:text-white w-[50px] h-[40px] md:absolute left-1/2 right-1/2"
+        />
+      </Link> 
+      <Link className="text md:text-base text-sm py-2 md:w-32 md:border-2 rounded-3xl text-center" href="/contact">Contact</Link>
     </nav>
   );
 };

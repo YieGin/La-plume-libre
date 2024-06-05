@@ -51,7 +51,7 @@ const Faq = () => {
                     <AccordionTrigger className="font-semibold text-left md:text-[1.3rem]">
                       {item.title}
                     </AccordionTrigger>
-                    <AccordionContent className="md:text-[1.1rem] w-[80%] text-muted-foreground">
+                    <AccordionContent className="md:text-[1.1rem] w-[80%] text-muted-foreground leading-6">
                       {item.description}
                     </AccordionContent>
                   </AccordionItem>
