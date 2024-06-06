@@ -71,7 +71,7 @@ const FormSection = () => {
                     Veuillez entrer votre prénom comme vous souhaitez que nous
                     vous appelions dans notre correspondance.
                   </FormDescription>
-                  <FormMessage />
+                  
                 </FormItem>
               )}
             />
@@ -88,7 +88,7 @@ const FormSection = () => {
                     Veuillez inclure votre nom de famille pour une communication
                     plus formelle.
                   </FormDescription>
-                  <FormMessage />
+                  
                 </FormItem>
               )}
             />
@@ -106,7 +106,7 @@ const FormSection = () => {
                   Veuillez fournir votre adresse email afin que nous puissions
                   répondre à votre demande rapidement.
                 </FormDescription>
-                <FormMessage />
+                
               </FormItem>
             )}
           />
@@ -128,7 +128,7 @@ const FormSection = () => {
                   réflexions, questions ou opportunités potentielles que vous
                   avez en tête. Au plaisir de vous contacter!
                 </FormDescription>
-                <FormMessage />
+                
               </FormItem>
             )}
           />

@@ -10,7 +10,7 @@ const Footer = () => {
     <div className="lg:container px-5 md:px-10 lg:px-[10rem] flex items-center justify-center w-full mt-20 mb-10">
       <div className="relative mx-auto mb-6 flex flex-col rounded-2xl p-8 shadow-sm saturate-100 backdrop-blur-[10px] dark:bg-gradient-to-br bg-gradient-to-bl dark:from-[#030712] dark:to-[#242731] from-[#e0e0e0] to-[#eeeeee] lg:max-w-4xl w-full">
         <div className="flex gap-2 items-center relative right-5">
-          <Logo className="dark:text-white text-black w-[80px] h-[80px]" />
+          <Logo className="dark:text-white text-black w-[120px] h-[120px]" />
         </div>
         <div className="flex justify-between flex-col md:flex-row lg:gap-52 lg:justify-normal mt-5">
           <div className="flex flex-col gap-y-3 font-sans">

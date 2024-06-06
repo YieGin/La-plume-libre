@@ -13,10 +13,10 @@ const Header = () => {
       <Link className="flex items-center" href="/">
         <Logo
           aria-label="Home"
-          className="text-[#000] dark:text-white w-[50px] h-[40px] md:absolute left-1/2 right-1/2"
+          className="text-[#000] dark:text-white w-[50px] h-full md:ml-24 ml-4"
         />
       </Link> 
-      <Link className="text md:text-base text-sm py-2 md:w-32 md:border-2 rounded-3xl text-center" href="/contact">Contact</Link>
+      <Link className="text md:text-base text-sm py-2 md:w-32 md:border-2 rounded-3xl text-center hover:bg-slate-800" href="/contact">Contact</Link>
     </nav>
   );
 };
